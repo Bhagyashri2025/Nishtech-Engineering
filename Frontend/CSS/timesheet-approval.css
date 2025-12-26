@@ -1,0 +1,49 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+}
+
+.container {
+  width: 80%;
+  margin: 50px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+h2 {
+  margin-bottom: 15px;
+  color: #003366;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #003366;
+  color: white;
+}
+
+button {
+  padding: 6px 12px;
+  margin: 0 3px;
+  cursor: pointer;
+  border: none;
+  color: white;
+}
+
+.approve {
+  background-color: #28a745;
+}
+
+.reject {
+  background-color: #dc3545;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Timesheet Approval | Admin</title>
+  <link rel="stylesheet" href="../css/timesheet-approval.css">
+</head>
+<body>
+
+<div class="container">
+
+  <h2>Pending Timesheets</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Employee</th>
+        <th>Project</th>
+        <th>Date</th>
+        <th>Hours</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>Rahul Patil</td>
+        <td>Payroll App</td>
+        <td>12-08-2025</td>
+        <td>8</td>
+        <td>
+          <button class="approve" onclick="approveTimesheet()">Approve</button>
+          <button class="reject" onclick="rejectTimesheet()">Reject</button>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Sneha More</td>
+        <td>HR Portal</td>
+        <td>12-08-2025</td>
+        <td>7</td>
+        <td>
+          <button class="approve" onclick="approveTimesheet()">Approve</button>
+          <button class="reject" onclick="rejectTimesheet()">Reject</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+<script src="../js/timesheet-approval.js"></script>
+</body>
+</html>

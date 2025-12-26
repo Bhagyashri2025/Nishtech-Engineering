@@ -1,0 +1,73 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+}
+
+.container {
+  width: 90%;
+  margin: 40px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+h2 {
+  margin-bottom: 15px;
+  color: #003366;
+}
+
+/* FILTERS */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.filters label {
+  font-size: 14px;
+}
+
+.filters input,
+.filters select {
+  padding: 5px;
+  margin-left: 5px;
+}
+
+.filters button {
+  padding: 6px 14px;
+  background-color: #003366;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* TABLE */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #003366;
+  color: white;
+}
+
+/* EXPORT */
+.export {
+  margin-top: 15px;
+  text-align: right;
+}
+
+.export button {
+  padding: 6px 12px;
+  margin-left: 5px;
+  cursor: pointer;
+}

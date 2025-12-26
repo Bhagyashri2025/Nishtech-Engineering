@@ -1,11 +1,14 @@
 function goToEmployees() {
-  alert("Navigate to Employee Management Page");
+  window.location.href = "employee-list.html";
 }
 
 function goToProjects() {
-  alert("Navigate to Project Management Page");
+window.location.href = "project-list.html";
 }
 
 function goToTimesheets() {
-  alert("Navigate to Timesheet Approval Page");
+window.location.href = "timesheet-approval.html";
 }
+ function goToProfile(){
+  window.location.href = "profile.html";
+ }

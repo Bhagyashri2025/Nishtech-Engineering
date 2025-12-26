@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f4f6f8;
+}
+
+/* HEADER */
+.header {
+  background-color: #003366;
+  color: white;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+}
+
+.logo-section img {
+  width: 45px;
+  margin-right: 10px;
+}
+
+.back {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* CONTAINER */
+.container {
+  padding: 25px;
+}
+
+/* TOP BAR */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.top-bar h2 {
+  color: #003366;
+}
+
+.top-bar button {
+  padding: 8px 14px;
+  background-color: #003366;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.top-bar button:hover {
+  background-color: #00509e;
+}
+
+/* TABLE */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.1);
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #00509e;
+  color: white;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* STATUS */
+.active {
+  color: green;
+  font-weight: bold;
+}
+
+.inactive {
+  color: red;
+  font-weight: bold;
+}
+
+/* ACTION BUTTONS */
+.edit {
+  background-color: #ffc107;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.activate {
+  background-color: #28a745;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.deactivate {
+  background-color: #dc3545;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.edit:hover,
+.activate:hover,
+.deactivate:hover {
+  opacity: 0.9;
+}

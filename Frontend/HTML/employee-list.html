@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Employee Management | Nishtek Engineering</title>
+  <link rel="stylesheet" href="../css/employee.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <div class="logo-section">
+    <img src="../assets/nishtek-logo.png" alt="Nishtek Logo">
+    <span>Employee Management</span>
+  </div>
+  <a href="admin-dashboard.html" class="back">← Dashboard</a>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+
+  <div class="top-bar">
+    <h2>Employees</h2>
+    <button onclick="addEmployee()">+ Add Employee</button>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Role</th>
+        <th>Status</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+
+    <tbody id="employeeTable">
+      <tr>
+        <td>1</td>
+        <td>Rahul Patil</td>
+        <td>rahul@nishtek.com</td>
+        <td>Employee</td>
+        <td class="active">Active</td>
+        <td>
+          <button class="edit" onclick="editEmployee(1)">Edit</button>
+          <button class="deactivate" onclick="toggleStatus(1)">Deactivate</button>
+        </td>
+      </tr>
+
+      <tr>
+        <td>2</td>
+        <td>Sneha More</td>
+        <td>sneha@nishtek.com</td>
+        <td>Employee</td>
+        <td class="inactive">Inactive</td>
+        <td>
+          <button class="edit" onclick="editEmployee(2)">Edit</button>
+          <button class="activate" onclick="toggleStatus(2)">Activate</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+<script src="../js/employee.js"></script>
+</body>
+</html>

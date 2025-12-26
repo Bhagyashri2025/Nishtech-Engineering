@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Daily Timesheet | Nishtek Engineering</title>
+  <link rel="stylesheet" href="../css/timesheet.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <div class="logo-section">
+    <img src="../assets/nishtek-logo.png" alt="Nishtek Logo">
+    <span>Daily Timesheet Entry</span>
+  </div>
+  <a href="employee-dashboard.html" class="back">← Dashboard</a>
+</div>
+
+<!-- FORM CONTAINER -->
+<div class="container">
+  <form class="timesheet-form">
+
+    <h2>Fill Your Timesheet</h2>
+
+    <label>Date</label>
+    <input type="date" id="date" readonly>
+
+    <label>Project</label>
+    <select id="project">
+      <option value="">Select Project</option>
+      <option>Payroll System</option>
+      <option>HR Portal</option>
+      <option>Timesheet App</option>
+    </select>
+
+    <label>Task</label>
+    <select id="task">
+      <option value="">Select Task</option>
+      <option>Development</option>
+      <option>Testing</option>
+      <option>Bug Fixing</option>
+      <option>Documentation</option>
+    </select>
+
+    <label>In Time</label>
+    <input type="time" id="inTime">
+
+    <label>Out Time</label>
+    <input type="time" id="outTime">
+
+    <label>Total Working Hours</label>
+    <input type="text" id="totalHours" placeholder="Auto Calculated" readonly>
+
+    <button type="button" onclick="submitTimesheet()">Submit Timesheet</button>
+
+    <p id="message"></p>
+
+  </form>
+</div>
+
+<script src="../js/timesheet.js"></script>
+</body>
+</html>
