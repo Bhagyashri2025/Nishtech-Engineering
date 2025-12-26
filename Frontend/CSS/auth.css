@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.auth-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightblue;
+}
+
+.auth-card {
+  width: 380px;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  width: 110px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  color: #003366;
+  margin: 5px auto;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: gray;
+  margin: 10px auto;
+}
+
+input {
+  width: 90%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  width: 95%;
+  padding: 10px;
+  margin-top: 15px;
+  background: #003366;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #00509e;
+}
+
+.role {
+  display: flex;
+  justify-content: space-around;
+  font-size: 14px;
+}
+
+.role label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.link {
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.link a {
+  color: #00509e;
+  text-decoration: none;
+}
+
+#error {
+  color: red;
+  margin-top: 10px;
+}

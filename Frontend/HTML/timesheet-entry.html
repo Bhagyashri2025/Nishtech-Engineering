@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Daily Timesheet</title>
+  <link rel="stylesheet" href="../css/timesheet.css">
+</head>
+<body>
+
+<h2>Daily Timesheet Entry</h2>
+
+<form>
+  <label>Date</label>
+  <input type="date" id="date">
+
+  <label>Project</label>
+  <select>
+    <option>Project A</option>
+    <option>Project B</option>
+  </select>
+
+  <label>Task</label>
+  <select>
+    <option>Development</option>
+    <option>Testing</option>
+  </select>
+
+  <label>In Time</label>
+  <input type="time" id="inTime">
+
+  <label>Out Time</label>
+  <input type="time" id="outTime">
+
+  <label>Total Hours</label>
+  <input type="text" id="totalHours" readonly>
+
+  <button type="button" onclick="calculateHours()">Submit</button>
+</form>
+
+<script src="../js/timesheet.js"></script>
+</body>
+</html>

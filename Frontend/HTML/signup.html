@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Sign Up | Nishtek Engineering</title>
+  <link rel="stylesheet" href="../css/auth.css">
+</head>
+<body>
+
+<div class="auth-wrapper">
+  <div class="auth-card">
+
+    <img src="../assets/nishtek-logo.png" alt="Nishtek Engineering Logo" class="logo">
+
+    <h3>Create Account</h3>
+    <p class="subtitle">Employee Registration</p>
+
+    <input type="text" id="name" placeholder="Full Name">
+    <input type="email" id="email" placeholder="Email Address">
+    <input type="password" id="password" placeholder="Password">
+    <input type="password" id="confirmPassword" placeholder="Confirm Password">
+
+    <div class="role">
+      <label><input type="radio" name="role" value="Employee"> <span>Employee</span></label>
+      <label><input type="radio" name="role" value="Admin"> <span>Admin</span></label>
+    </div>
+
+    <button onclick="signup()">Register</button>
+
+    <p class="link">
+      Already registered? <a href="login.html">Login</a>
+    </p>
+
+    <p id="error"></p>
+
+  </div>
+</div>
+
+<script src="../js/signup.js"></script>
+</body>
+</html>

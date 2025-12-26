@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Employee Dashboard | Nishtek Engineering</title>
+  <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <div class="logo-section">
+    <img src="../assets/nishtek-logo.png" alt="Nishtek Logo">
+    <span>Employee Dashboard</span>
+  </div>
+  <a href="login.html" class="logout">Logout</a>
+</div>
+
+<!-- MAIN CONTAINER -->
+<div class="main-container">
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+    <a class="active">Dashboard</a>
+    <a href="timesheet-entry.html">Fill Timesheet</a>
+    <a href="#">My Timesheets</a>
+    <a href="#">Projects</a>
+    <a href="#">Profile</a>
+  </div>
+
+  <!-- CONTENT -->
+  <div class="content">
+
+    <h2>Welcome, Employee 👋</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Today's Hours</h3>
+        <p>8 hrs</p>
+      </div>
+
+      <div class="card">
+        <h3>This Week</h3>
+        <p>40 hrs</p>
+      </div>
+
+      <div class="card">
+        <h3>Assigned Projects</h3>
+        <p>3</p>
+      </div>
+
+      <div class="card">
+        <h3>Timesheet Status</h3>
+        <p class="status">Submitted</p>
+      </div>
+    </div>
+
+    <!-- QUICK ACTION -->
+    <div class="quick-action">
+      <h3>Quick Action</h3>
+      <button onclick="goToTimesheet()">Fill Today’s Timesheet</button>
+    </div>
+
+  </div>
+</div>
+
+<script src="../js/employee-dashboard.js"></script>
+</body>
+</html>

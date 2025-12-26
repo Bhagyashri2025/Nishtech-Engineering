@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Admin Dashboard | Nishtek Engineering</title>
+  <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <div class="logo-section">
+    <img src="../assets/nishtek-logo.png" alt="Nishtek Logo">
+    <span>Admin Dashboard</span>
+  </div>
+  <a href="login.html" class="logout">Logout</a>
+</div>
+
+<!-- MAIN CONTAINER -->
+<div class="main-container">
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+    <a class="active">Dashboard</a>
+    <a href="#">Employees</a>
+    <a href="#">Projects</a>
+    <a href="#">Tasks</a>
+    <a href="#">Timesheets</a>
+    <a href="reports.html">Reports</a>
+    <a href="#">Notifications</a>
+    <a href="#">Settings</a>
+  </div>
+
+  <!-- CONTENT -->
+  <div class="content">
+
+    <h2>Welcome, Admin 👋</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Total Employees</h3>
+        <p>25</p>
+      </div>
+
+      <div class="card">
+        <h3>Total Projects</h3>
+        <p>8</p>
+      </div>
+
+      <div class="card">
+        <h3>Pending Timesheets</h3>
+        <p>5</p>
+      </div>
+
+      <div class="card">
+        <h3>Weekly Summary</h3>
+        <p>320 hrs</p>
+      </div>
+    </div>
+
+    <!-- QUICK ACTIONS -->
+    <div class="quick-action">
+      <h3>Admin Actions</h3>
+      <button onclick="goToEmployees()">Manage Employees</button>
+      <button onclick="goToProjects()">Manage Projects</button>
+      <button onclick="goToTimesheets()">Review Timesheets</button>
+    </div>
+
+  </div>
+</div>
+
+<script src="../js/admin-dashboard.js"></script>
+</body>
+</html>
